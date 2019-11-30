@@ -1,0 +1,40 @@
+.pagination__page {
+    display: none;
+}
+.pagination__page.active {
+    display: block;
+}
+.pagination__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagination__control {
+    padding: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.pagination__control.active,
+.pagination__control:hover {
+    color: blue;
+    text-decoration: underline;
+}
+.pagination__btn_next, .pagination__btn_prev,
+.pagination__btn_next svg, .pagination__btn_prev svg,
+.pagination__btn_next img, .pagination__btn_prev img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.pagination__btn_next:hover svg path,
+.pagination__btn_prev:hover svg path {
+    fill: blue;
+    transition: all .3s;
+}
+.pagination__btn_prev {
+    transform: rotate(180deg);
+}
+.pagination__page ul {
+    list-style-type: none;
+}
